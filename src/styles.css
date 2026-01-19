@@ -12,6 +12,11 @@ body {
   text-align: center;
 }
 
+.text-center-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -21,6 +26,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  filter: saturate(150%);
 }
 
 .grid-2-columns {
@@ -32,10 +38,16 @@ body {
 }
 
 .gallery {
-  max-width: 100%;
+  max-width: 80%;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-top: 30px;
+  margin: auto;
+  transition: all 150ms ease-in-out;
+}
+
+.gallery:hover {
+  transform: scale(1.3);
 }
 
 .grid-3-columns-with-first-narrow {
@@ -62,6 +74,13 @@ body {
 
 .card-footer {
   padding: 0 30px 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .btn {
